@@ -159,4 +159,6 @@ public class Calculator
     {
         return Math.Round(1 / decay * Math.Log(initial * decay * time + 1, Math.E));
     }
+    
+    //testing
 }
