@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/marymichelleambrosio/Downloads/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj": {}
+    "/Users/marymichelleambrosio/Documents/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj": {}
   },
   "projects": {
-    "/Users/marymichelleambrosio/Downloads/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj": {
+    "/Users/marymichelleambrosio/Documents/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/marymichelleambrosio/Downloads/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj",
+        "projectUniqueName": "/Users/marymichelleambrosio/Documents/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj",
         "projectName": "ICT3101_Calculator",
-        "projectPath": "/Users/marymichelleambrosio/Downloads/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj",
+        "projectPath": "/Users/marymichelleambrosio/Documents/Lab2/ICT3101_Calculator/ICT3101_Calculator/ICT3101_Calculator.csproj",
         "packagesPath": "/Users/marymichelleambrosio/.nuget/packages/",
-        "outputPath": "/Users/marymichelleambrosio/Downloads/Lab2/ICT3101_Calculator/ICT3101_Calculator/obj/",
+        "outputPath": "/Users/marymichelleambrosio/Documents/Lab2/ICT3101_Calculator/ICT3101_Calculator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/marymichelleambrosio/.nuget/NuGet/NuGet.Config"
@@ -45,6 +45,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.3.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
             },
             "NUnit": {
               "target": "Package",

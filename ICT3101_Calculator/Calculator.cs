@@ -6,10 +6,17 @@ using System.Diagnostics.SymbolStore;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ICT3101_Calculator;
 
 public class Calculator
 {
-    public Calculator() { }
+    private FileReader getTheMagic;
+
+    public Calculator() {
+        // Lab 4 Q4
+        getTheMagic = new FileReader();
+    }
+    
     public double DoOperation(double num1, double num2, string op)
     {
         double result = double.NaN; // Default value
@@ -160,5 +167,41 @@ public class Calculator
         return Math.Round(1 / decay * Math.Log(initial * decay * time + 1, Math.E));
     }
     
-    //testing
+    // Q4
+    public double GenMagicNumBase(double input)
+    {
+        double result = 0;
+        int choice = Convert.ToInt16(input);
+
+        // Lab 4 Q4
+        //Dependency------------------------------
+        FileReader getTheMagic = new FileReader();
+        //----------------------------------------
+        string[] magicStrings = getTheMagic.Read(@"MagicNumbers.txt");
+
+        if ((choice >= 0) && (choice < magicStrings.Length))
+        {
+            result = Convert.ToDouble(magicStrings[choice]);
+        }
+        result = (result > 0) ? (2 * result) : (-2 * result);
+        return result;
+    }
+    
+    // Q8
+    public double GenMagicNum(double input, IFileReader fileReader)
+    {
+        double result = 0;
+        int choice = Convert.ToInt16(input);
+
+        // Lab 4 Q8
+        string[] magicStrings = fileReader.Read(@"MagicNumbers.txt");
+        if ((choice >= 0) && (choice < magicStrings.Length))
+        {
+            result = Convert.ToDouble(magicStrings[choice]);
+        }
+        result = (result > 0) ? (2 * result) : (-2 * result);
+        return result;
+    }
+    
+    // testing
 }
